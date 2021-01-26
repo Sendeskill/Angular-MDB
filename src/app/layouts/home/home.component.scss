@@ -2,6 +2,22 @@
     min-height: 150vh;
 }
 
+.img-code{
+    position: relative;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    position: absolute;
+}
+
+@keyframes example {
+    0%   {left:0px; top:0px;}
+    25%  {left:70px; top:0px;}
+    50%  {left:0px; top:0px;}
+    75%  {left:70px; top:0px;}
+    100% {left:0px; top:0px;}
+  }
+
 .header-img-section{
     width: 100%;
     animation: float 5s ease-in-out infinite;
