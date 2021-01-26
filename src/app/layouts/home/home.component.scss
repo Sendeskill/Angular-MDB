@@ -1,3 +1,57 @@
 .min-h{
-    min-height: 100vh;
+    min-height: 150vh;
+}
+
+.header-img-section{
+    width: 100%;
+    animation: float 5s ease-in-out infinite;
+}
+
+.padding-top{
+    padding-top: 150px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.header-title {
+    font-family: Poppins;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 1.15;
+    margin-bottom: 25px;
+    color: #080a3d;
+}
+
+.header-title-text {
+    font-family: Quicksand;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    max-width: 450px;
+    color: #798089;
+}
+
+.header-title span {
+    color: #12c4a0;
+}
+
+.header-subtitle {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    color: #5e5e72;
+}
+
+.learn-more-btn-section {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 20px;
 }

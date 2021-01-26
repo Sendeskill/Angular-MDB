@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;900&display=swap');
+
+body {
+    font-family: 'Source Code Pro', monospace;
+}
+
 .bg-pink{
     background-image: url(./assets/img-template/pink-header-bg.png);
     background-position: right 0px;
     background-repeat: no-repeat;
-    background-size: 65%;
+    background-size: 60%;
     transform: translate3d(0px, 0px, 0px);
     transform-style: preserve-3d;
     backface-visibility: hidden;
