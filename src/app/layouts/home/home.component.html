@@ -1,5 +1,34 @@
+<div id="home"></div>
+<nav class="sticky navbar bg-color" id="nav">
+    <div class="container">
+        <img class="pb-2 pt-2"
+             src="../../../assets/logo/Logo2.png"
+             height="80"
+             alt="">
+        <a class="navbar-brand margin-nav mt-3 text-danger"
+           (click)="navigate('home')">Home</a>
+
+        <a class="navbar-brand mt-3 text-white"
+           (click)="navigate('about')">Sobre</a>
+
+        <a class="navbar-brand mt-3 text-white"
+           (click)="navigate('model')">Modelo</a>
+
+        <a class="navbar-brand mt-3 text-white"
+           href="#">Tecnologia</a>
+
+        <a class="navbar-brand mt-3 text-white"
+           href="#">Dúvidas</a>
+
+        <a class="navbar-brand mt-3 text-white"
+           href="#">Contato</a>
+    </div>
+</nav>
 <div class="min-h">
-    <img class="img-code" src="../../../assets/img-template/icone-code.png" alt="">
+
+    <img class="img-code"
+         src="../../../assets/img-template/icone-code.png"
+         alt="">
 
     <div class="container padding-top form-inline">
         <div class="col-md-6">
@@ -18,6 +47,10 @@
                  src="../../../assets/img-home/hero_img.png"
                  height="500">
         </div>
+    </div>
+
+    <div class="w-100 text-center margin-carousel mb-5">
+        <h3 class="text-secondary">Tecnologias que amamos trabalhar:</h3>
     </div>
 
     <mdb-carousel class="carousel slide carousel-fade mt-5"
@@ -57,7 +90,16 @@
                 <div class="col-md-2"><img height="80"
                          src="../../../assets/carousel/node.png">
                 </div>
+                <div class="col-md-2"><img height="80"
+                         src="../../../assets/carousel/net.png">
+                </div>
             </div>
         </mdb-carousel-item>
     </mdb-carousel>
+
+    <div id="about"></div>
+    <app-about></app-about>
+
+    <div id="model"></div>
+    <app-model></app-model>
 </div>
