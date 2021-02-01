@@ -9,6 +9,7 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { AboutComponent } from './layouts/about/about.component';
 import { ModelComponent } from './layouts/model/model.component';
+import { TechnologyComponent } from './layouts/technology/technology.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ModelComponent } from './layouts/model/model.component';
     HomeComponent,
     FooterComponent,
     AboutComponent,
-    ModelComponent
+    ModelComponent,
+    TechnologyComponent
   ],
   imports: [
     BrowserModule,
