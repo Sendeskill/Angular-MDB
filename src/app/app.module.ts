@@ -10,6 +10,8 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { AboutComponent } from './layouts/about/about.component';
 import { ModelComponent } from './layouts/model/model.component';
 import { TechnologyComponent } from './layouts/technology/technology.component';
+import { DoubtComponent } from './layouts/doubt/doubt.component';
+import { ContactComponent } from './layouts/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { TechnologyComponent } from './layouts/technology/technology.component';
     FooterComponent,
     AboutComponent,
     ModelComponent,
-    TechnologyComponent
+    TechnologyComponent,
+    DoubtComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

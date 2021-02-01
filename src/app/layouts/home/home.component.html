@@ -18,10 +18,10 @@
            (click)="navigate('technology')">Tecnologia</a>
 
         <a class="navbar-brand mt-3 text-white"
-           href="#">Dúvidas</a>
+           (click)="navigate('doubts')">Dúvidas</a>
 
         <a class="navbar-brand mt-3 text-white"
-           href="#">Contato</a>
+           (click)="navigate('contact')">Contato</a>
     </div>
 </nav>
 <div class="min-h">
@@ -105,4 +105,10 @@
 
     <div id="technology"></div>
     <app-technology></app-technology>
+
+    <div id="doubts"></div>
+    <app-doubt></app-doubt>
+
+    <div id="contact"></div>
+    <app-contact></app-contact>
 </div>
