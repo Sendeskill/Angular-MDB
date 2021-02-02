@@ -1,10 +1,13 @@
 <div id="home"></div>
-<nav class="sticky navbar bg-color" id="nav">
+<nav class="sticky navbar bg-color"
+     id="nav">
     <div class="container">
-        <img class="pb-2 pt-2"
-             src="../../../assets/logo/Logo2.png"
-             height="80"
-             alt="">
+        <a (click)="navigate('home')">
+            <img class="pb-2 pt-2"
+                 src="../../../assets/logo/Logo2.png"
+                 height="80"
+                 alt="">
+        </a>
         <a class="navbar-brand margin-nav mt-3 text-danger"
            (click)="navigate('home')">Home</a>
 
@@ -25,7 +28,6 @@
     </div>
 </nav>
 <div class="min-h">
-
     <img class="img-code"
          src="../../../assets/img-template/icone-code.png"
          alt="">
@@ -44,7 +46,8 @@
         </div>
         <div class="col-md-6 header-img-section">
             <img class="animated pulse infinite"
-                 src="../../../assets/img-home/hero_img.png"
+                 src="
+                 ../../../assets/img-home/hero_img.png"
                  height="500">
         </div>
     </div>
