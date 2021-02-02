@@ -12,6 +12,7 @@ import { ModelComponent } from './layouts/model/model.component';
 import { TechnologyComponent } from './layouts/technology/technology.component';
 import { DoubtComponent } from './layouts/doubt/doubt.component';
 import { ContactComponent } from './layouts/contact/contact.component';
+import { AngularCollapseModule } from 'angular-collapse';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ContactComponent } from './layouts/contact/contact.component';
     BrowserModule,
     AppRoutingModule,
     MDBBootstrapModule.forRoot(),
-    AngularFontAwesomeModule
+    AngularFontAwesomeModule,
+    AngularCollapseModule
   ],
   providers: [],
   bootstrap: [AppComponent]

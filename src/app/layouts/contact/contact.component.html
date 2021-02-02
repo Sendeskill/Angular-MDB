@@ -1,5 +1,53 @@
 <div class="min-h">
     <div class="container">
-        
+        <div class="col md-12 text-center">
+            <p class="tech-subtitle">Nosso time está aguarndo</p>
+            <h2 class="tech-title">Entre em contato!!</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <form class="text-center border border-light rounded p-5">
+
+                    <!-- Name -->
+                    <input type="text" formControlName="contactFormName" id="defaultContactFormName" mdbInput
+                      class="form-control mb-4" placeholder="Nome">
+
+                    <input type="text" formControlName="contactFormCompany" id="contactFormCompany" mdbInput
+                    class="form-control mb-4" placeholder="Nome da Empresa">
+                  
+                    <!-- Email -->
+                    <input type="email" formControlName="contactFormEmail" id="defaultContactFormEmail" mdbInput
+                      class="form-control mb-4" placeholder="E-mail">
+                  
+                    <!-- Subject -->
+                    <label>Opções</label>
+                    <select formControlName="contactFormSubjects" class="browser-default custom-select mb-4">
+                      <option value="0" selected>Quero solicitar um orçamento</option>
+                      <option value="1">Quero tirar dúvidas</option>
+                      <option value="2">Quero melhorar meu site atual</option>
+                      <option value="3">Quero criar um site do zero</option>
+                      <option value="4">Quero criar um site a partir dos meus dados</option>
+                    </select>
+                  
+                    <!-- Message -->
+                    <div class="form-group">
+                      <textarea formControlName="contactFormMessage" class="form-control rounded-0" mdbInput id="exampleFormControlTextarea2"
+                        rows="3" placeholder="Observação"></textarea>
+                    </div>
+                  
+                    <!-- Copy -->
+                    <mdb-checkbox [default]="true" class="mb-4">Me envie uma cópia por email</mdb-checkbox>
+                  
+                    <!-- Send button -->
+                    <button mdbBtn color="purple" outline="true" block="true" class="z-depth-0 my-4 waves-effect"
+                      mdbWavesEffect type="submit">Enviar</button>
+                  
+                  </form>
+                  <!-- Default form contact -->
+            </div>
+            <div class="col-md-4">
+                <img src="../../../assets/img-contact/contact.png" alt="">
+            </div>
+        </div>
     </div>
 </div>
