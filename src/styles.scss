@@ -96,3 +96,26 @@ body {
     }
   }
   
+
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: 5px 5px 5px #ecf1f8; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  body::-webkit-scrollbar-thumb {
+    background: #df3794; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  body::-webkit-scrollbar-thumb:hover {
+    background: #7d4096; 
+  }
+  
