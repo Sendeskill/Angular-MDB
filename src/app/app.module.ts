@@ -13,6 +13,11 @@ import { TechnologyComponent } from './layouts/technology/technology.component';
 import { DoubtComponent } from './layouts/doubt/doubt.component';
 import { ContactComponent } from './layouts/contact/contact.component';
 import { AngularCollapseModule } from 'angular-collapse';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -28,7 +33,12 @@ import { AngularCollapseModule } from 'angular-collapse';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
     MDBBootstrapModule.forRoot(),
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule,
     AngularFontAwesomeModule,
     AngularCollapseModule
   ],
