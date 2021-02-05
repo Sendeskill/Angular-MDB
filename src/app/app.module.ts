@@ -18,6 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { environment } from 'src/environments/environment';
+import { ContactService } from './layouts/contact/contact.service';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,9 @@ import { environment } from 'src/environments/environment';
     AngularFontAwesomeModule,
     AngularCollapseModule
   ],
-  providers: [],
+  providers: [
+    ContactService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

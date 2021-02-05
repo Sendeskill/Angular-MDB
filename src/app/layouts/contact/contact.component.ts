@@ -1,9 +1,9 @@
-import { Component, HostListener, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, NgForm, Validators } from '@angular/forms';
+import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Contact } from 'src/app/models/contact/contact';
 import * as email from 'nativescript-email';
 import { Observable } from 'rxjs';
-import { AngularFireDatabase } from 'angularfire2/database';
+import { ContactService } from './contact.service';
 
 @Component({
   selector: 'app-contact',
@@ -23,12 +23,12 @@ export class ContactComponent implements OnInit {
 
   contactForm: FormGroup;
 
+  CLOUND_URL = 'https://us-central1-desk-code-example.cloudfunctions.net/emailSender'
+
   composeOptions: email.ComposeOptions;
 
   constructor(private fb: FormBuilder,
-              private db: AngularFireDatabase) {
-
-    this.items = db.list('messages').valueChanges();
+    private contactService: ContactService) {
 
     this.contactForm = fb.group({
       contactFormName: ['', Validators.required],
@@ -42,11 +42,12 @@ export class ContactComponent implements OnInit {
   }
 
   onSubmit() {
-    this.db.list('/messages').push({
-      name: this.contact.name, email: this.contact.email, subject: this.contact.companyName,
-      message: this.contact.obs
-    });
-    alert('Thank you for contacting us, your message has gone through!');
+    this.contactService
+      .sendEmail(this.contact).subscribe(() => {
+        alert('Email enviado com sucesso');
+      }, err => {
+        console.log(err);
+      });
   }
 
   clearForm() {

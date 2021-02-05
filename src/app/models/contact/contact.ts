@@ -1,6 +1,6 @@
 export class Contact {
     name: string;
-    companyName: string;
+    nameCompany: string;
     email: string;
     obs: string;
     copy: boolean;
