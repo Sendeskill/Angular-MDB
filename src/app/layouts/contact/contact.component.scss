@@ -1,0 +1,58 @@
+.min-h{
+    min-height: 100vh;
+    margin-top: 100px;
+    background-image: url(../../../assets/img-contact/btns.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.tech-subtitle {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 5px;
+    color: #5e5e72;
+}
+
+.tech-title {
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 1.25;
+    margin-bottom: 25px;
+    color: #080a3d;
+}
+
+.border-purple{
+    border: solid 1px purple;
+}
+
+.modal-header {
+    margin: 0 auto;
+    width: 100%;
+    background-color: #33b5e5;
+}
+
+.btn {
+    background-color: #33b5e5;
+}
+
+.container {
+    padding-top: 100px;
+}
+
+.card {
+    padding: 15px 30px;
+    width: 100%;
+    margin: auto;
+}
+
+#email,
+#phone {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: .5em;
+}
+
+span.x {
+    color: #fff;
+}

@@ -1,0 +1,59 @@
+.img-shop{
+    position: relative;
+    left: -300px;
+}
+
+.about-title {
+    font-family: Poppins;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 1.25;
+    max-width: 1000px;
+    margin-bottom: 25px;
+    color: #080a3d;
+}
+
+.about-text {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    max-width: 750px;
+    color: #798089;
+}
+
+.min-h{
+    min-height: 100vh;
+    margin-top: 100px;
+    background-image: url(../../../assets/img-contact/btns.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.margin-about{
+    padding-top: 100px;
+}
+
+.insta-title{
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 1.25;
+    max-width: 1000px;
+    margin-bottom: 25px;
+    color: #080a3d;
+}
+
+.number{
+    font-family: Poppins;
+    font-weight: 800;
+    font-size: 24px;
+    padding: 4px 17px;
+    border-radius: 25px;
+    max-width: 47px;
+    color: #ffffff;
+    background-color: #12c4a0;
+}
+
+.margin-insta{
+    padding-top: 150px;
+}

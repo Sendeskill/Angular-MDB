@@ -1,0 +1,119 @@
+<div id="home"></div>
+<nav class="sticky navbar bg-color"
+     id="nav">
+    <div class="container">
+        <a (click)="navigate('home')">
+            <img class="pb-2 pt-2"
+                 src="../../../assets/logo/Logo2.png"
+                 height="80"
+                 alt="">
+        </a>
+        <a class="navbar-brand margin-nav mt-3 text-danger"
+           (click)="navigate('home')">Home</a>
+
+        <a class="navbar-brand mt-3 text-white"
+           (click)="navigate('about')">Sobre</a>
+
+        <a class="navbar-brand mt-3 text-white"
+           (click)="navigate('model')">Modelo</a>
+
+        <a class="navbar-brand mt-3 text-white"
+           (click)="navigate('technology')">Tecnologia</a>
+
+        <a class="navbar-brand mt-3 text-white"
+           (click)="navigate('doubts')">Dúvidas</a>
+
+        <a class="navbar-brand mt-3 text-white"
+           (click)="navigate('contact')">Contato</a>
+    </div>
+</nav>
+<div class="min-h">
+    <img class="img-code"
+         src="../../../assets/img-template/icone-code.png"
+         alt="">
+
+    <div class="container padding-top form-inline">
+        <div class="col-md-6">
+            <p class="header-subtitle">DeskCode apresenta</p>
+            <h1 class="header-title">A melhor <span>Landing Page</span> para sua empresa</h1>
+            <p class="header-title-text">Com a melhor tecnologia do mercado, totalmente customizavél. O código do
+                projeto é disponibilizado no seu repositório.</p>
+            <div class="text-center">
+                <button class="rounded text-center"
+                        (click)="navigate('contact')"
+                        mdbBtn
+                        color="purple">Eu quero!</button>
+            </div>
+        </div>
+        <div class="col-md-6 header-img-section">
+            <img class="animated pulse infinite"
+                 src="
+                 ../../../assets/img-home/hero_img.png"
+                 height="500">
+        </div>
+    </div>
+
+    <div class="w-100 text-center margin-carousel mb-5">
+        <h3 class="text-secondary">Tecnologias que amamos trabalhar:</h3>
+    </div>
+
+    <mdb-carousel class="carousel slide carousel-fade mt-5"
+                  [isControls]="false"
+                  [animation]="'fade'">
+        <mdb-carousel-item>
+            <div class="col-md-12 row text-center">
+                <div class="offset-md-3 col-md-2"><img height="80"
+                         src="../../../assets/carousel/angular.png">
+                </div>
+                <div class="col-md-2"><img height="80"
+                         src="../../../assets/carousel/aws.png">
+                </div>
+                <div class="col-md-2"><img height="80"
+                         src="../../../assets/carousel/firebase.png">
+                </div>
+            </div>
+        </mdb-carousel-item>
+        <mdb-carousel-item>
+            <div class="col-md-12 row text-center">
+                <div class="offset-md-3 col-md-2"><img height="80"
+                         src="../../../assets/carousel/github.png">
+                </div>
+                <div class="col-md-2"><img height="80"
+                         src="../../../assets/carousel/html.png">
+                </div>
+                <div class="col-md-2"><img height="80"
+                         src="../../../assets/carousel/mdb.png">
+                </div>
+            </div>
+        </mdb-carousel-item>
+        <mdb-carousel-item>
+            <div class="col-md-12 row text-center">
+                <div class="offset-md-3 col-md-2"><img height="80"
+                         src="../../../assets/carousel/mongo.png">
+                </div>
+                <div class="col-md-2"><img height="80"
+                         src="../../../assets/carousel/node.png">
+                </div>
+                <div class="col-md-2"><img height="80"
+                         src="../../../assets/carousel/net.png">
+                </div>
+            </div>
+        </mdb-carousel-item>
+    </mdb-carousel>
+
+    <div id="about"></div>
+    <app-about></app-about>
+
+    <div id="model"></div>
+    <app-model></app-model>
+
+    <div id="technology"></div>
+    <app-technology></app-technology>
+
+    <div id="doubts"></div>
+    <app-doubt></app-doubt>
+
+    <div id="contact"></div>
+    <app-contact></app-contact>
+</div>
+<app-footer></app-footer>

@@ -5,7 +5,17 @@
 export const environment = {
   production: true,
   hmr: false,
-  api: ''
+  api: '',
+  firebase: {
+    apiKey: 'AIzaSyArDSBDHUzmD0pNzeRSDl3LVY8X2FAVCzM',
+    authDomain: 'desk-code.firebaseapp.com',
+    databaseURL: 'https://desk-code-default-rtdb.firebaseio.com',
+    projectId: 'desk-code',
+    storageBucket: 'desk-code.appspot.com',
+    messagingSenderId: '243131263809',
+    appId: '1:243131263809:web:49d352056a32476a88cfc0',
+    measurementId: 'G-5G6GXSG1NR'
+  }
 };
 
 /*
